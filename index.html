@@ -1,33 +1,56 @@
  <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>HAPPY BIRTHDAY AFREEN!!!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- External JS for random messages -->
-    <script src="Random_message.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="Random_message.js">
+    </script>
+    <style>
+         .GFG 
+         {
+            background-color: rgb(238, 43, 196);
+            border: 2px solid black;
+            color: rgb(12, 51, 180);
+            padding: 5px 5px;
+            text-align: center;
+            font-size: 20px;
+            margin: 10px 30px;
+            cursor: pointer;
+            position:relative; 
+            right:40px; 
+            bottom:-100px;
+        }
+        body 
+        {
+            background-image: url('Background.jpg');
+            background-repeat: no-repeat;
+            background-size: 1350px 630px;
+        }
+    </style>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>🎉 Happy Birthday, Afreen! 🎂</h1>
-            <p class="subtitle">Wishing you a day filled with joy, laughter, and love!</p>
-        </header>
-        <main>
-            <div class="button-group">
-                <button class="main-btn" onclick="Message()">Show Positivity</button>
-                <button class="main-btn hint-btn" onclick="Hint()">Show Hint</button>
-                <button class="main-btn photo-btn" onclick="window.location.href='Photos web page.html'">See Pics</button>
-            </div>
-            <div class="output">
-                <p id="pmessage" class="message"></p>
-                <p id="phint" class="hint"></p>
-            </div>
-        </main>
-        <footer>
-            &copy; 2025 With Love 💖
-        </footer>
-    </div>
+
+<body style="background-color:#e42e73ef; padding-top: 200px">
+    <!-- message button -->
+    <center>
+        <div id="button"></div>
+        <button onclick="Message()"
+            style="background-color:rgba(11, 218, 200, 0.904); border:radius 5px; width:200px; height:50px; font-size: 20px">Positivity</button>
+        <p id="pmessage"></p>
+    </center>
+
+    <!-- Hint button -->
+    <div id="buttonhint" style="position:relative; left:40px; top:-10px;"></div>
+    <buttonhint onclick="Hint()"
+        style="background-color: rgb(255, 0, 128);border:radius 5px; width:200px; height:50px; font-size: 20px">Hint
+    </buttonhint>
+    <center>
+        <p id="phint"></p>
+    </center>
+
+    <!-- Photos Button-->
+    <button2 class="GFG" onclick="window.location.href = 'Photos web page.html';">
+         Picss
+    </button2>
 </body>
 </html>
